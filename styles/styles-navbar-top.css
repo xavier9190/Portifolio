@@ -1,0 +1,89 @@
+/* ===== TOP BAR PADRÃO ===== */
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(19, 19, 19, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(74, 68, 85, 0.2);
+  box-shadow: 0 0 15px rgba(220, 184, 255, 0.1);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.neon-icon {
+  color: var(--primary);
+  font-size: 1.75rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), var(--primary-container));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  font-family: 'Space Grotesk', monospace;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', monospace;
+  transition: color 0.2s;
+}
+
+.nav-link.active {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.25rem;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* Botão mobile (menu sanduíche) – opcional, mas recomendado */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .container {
+    padding: 0.75rem 1rem;
+  }
+}
