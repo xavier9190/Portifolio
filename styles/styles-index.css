@@ -333,7 +333,6 @@ h1, h2, h3, h4, .logo-text, .nav-link, .section-label, .btn-primary, .btn-second
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
-  auto-rows: minmax(180px, auto);
 }
 
 .bento-card {
