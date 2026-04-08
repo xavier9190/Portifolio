@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>NEON_ARCHITECT // CONTACT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles-contact.css">
+</head>
+<body>
+    <!-- Top App Bar -->
+    <header class="top-bar">
+        <div class="container top-bar__inner">
+            <div class="logo">
+                <span class="material-symbols-outlined logo__icon">terminal</span>
+                <span class="logo__text">NEON_ARCHITECT</span>
+            </div>
+            <nav class="nav-primary">
+                <a href="#" class="nav-primary__link">Index</a>
+                <a href="#" class="nav-primary__link">Pipeline</a>
+                <a href="#" class="nav-primary__link nav-primary__link--active">Contact</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu">MENU</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Background decorative elements -->
+        <div class="bg-glow bg-glow--top-right"></div>
+        <div class="bg-glow bg-glow--bottom-left"></div>
+
+        <!-- Hero + Contact Form Section -->
+        <section class="contact-section">
+            <div class="contact-grid">
+                <!-- Left side: editorial + contact info -->
+                <div class="contact-info">
+                    <div class="contact-info__header">
+                        <h1 class="contact-title">
+                            LET'S <span class="contact-title-accent">BUILD</span> DATA SOLUTIONS <span class="contact-title-tertiary">TOGETHER</span>.
+                        </h1>
+                        <p class="contact-description">
+                            Architecting high-scale infrastructure requires precision and vision. Reach out to discuss ETL pipelines, stream processing, or cloud migration.
+                        </p>
+                    </div>
+
+                    <div class="contact-details">
+                        <!-- Email -->
+                        <div class="contact-card">
+                            <div class="contact-card__icon contact-card__icon--email">
+                                <span class="material-symbols-outlined">alternate_email</span>
+                            </div>
+                            <div class="contact-card__content">
+                                <p class="contact-card__label">Email</p>
+                                <p class="contact-card__value">architect@neon-terminal.io</p>
+                            </div>
+                        </div>
+                        <!-- Networking -->
+                        <div class="contact-card">
+                            <div class="contact-card__icon contact-card__icon--primary">
+                                <span class="material-symbols-outlined">share</span>
+                            </div>
+                            <div class="contact-card__content">
+                                <p class="contact-card__label">Networking</p>
+                                <div class="contact-links">
+                                    <a href="#" class="contact-link">LinkedIn</a>
+                                    <a href="#" class="contact-link">GitHub</a>
+                                    <a href="#" class="contact-link">Documentation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="contact-card">
+                            <div class="contact-card__icon contact-card__icon--tertiary">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div class="contact-card__content">
+                                <p class="contact-card__label">Location</p>
+                                <p class="contact-card__value">Remote / Global Node</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="cta-wrapper">
+                        <button class="cta-button">
+                            Collaborate on Data Engineering Projects
+                            <span class="material-symbols-outlined">bolt</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right side: Glassmorphic Form -->
+                <div class="form-wrapper">
+                    <div class="glass-card">
+                        <div class="glass-card__glow"></div>
+                        <div class="glass-card__inner">
+                            <form class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="name" class="form-input" placeholder=" " autocomplete="off">
+                                        <label for="name" class="form-label">Ident_Name</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="email" class="form-input" placeholder=" " autocomplete="off">
+                                        <label for="email" class="form-label">Ident_Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-group--select">
+                                    <select id="subject" class="form-select">
+                                        <option disabled selected value="">Select Pipeline Type</option>
+                                        <option value="etl">ETL Architecture</option>
+                                        <option value="streaming">Stream Processing</option>
+                                        <option value="lakehouse">Data Lakehouse</option>
+                                        <option value="consulting">General Consultation</option>
+                                    </select>
+                                    <label for="subject" class="select-label">Process_Category</label>
+                                </div>
+
+                                <div class="form-group form-group--textarea">
+                                    <textarea id="message" class="form-textarea" placeholder=" " rows="4"></textarea>
+                                    <label for="message" class="textarea-label">Project_Brief</label>
+                                </div>
+
+                                <button type="submit" class="submit-button">
+                                    INITIALIZE_SEND
+                                    <span class="material-symbols-outlined">send</span>
+                                </button>
+                            </form>
+
+                            <div class="form-footer">
+                                <span>Status: Available_For_Hire</span>
+                                <span>Node: US-WEST-2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Grid (Bento-ish) -->
+        <section class="visual-grid">
+            <div class="grid-card">
+                <img class="grid-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATIk4kEzJomGGgY5zOKekeaWMTqBCf7a-dWLjOWACVOE3pKZxhdQ5GR91EEU-p1qRO1qGySa6BLdp3LpWwurd5G7ENCP7lG2XupulFAx1Pd6dWG1wbjAPij-djonsUYQTOnLpMpelHipDO9CI4CTaJh17lnTMu1_8XaV4dt-rmWZY0feXJtCGm1ToiACxszx__2s8PPfgI8f-BF5aB2aLiUkdb6DHfr-D6U27N_gSzXdzjybx8mv0UIULYSB-QUTP1lgysSE4nyA8" alt="Circuit board">
+                <div class="grid-overlay"></div>
+                <span class="grid-label">INFRASTRUCTURE</span>
+            </div>
+            <div class="grid-card">
+                <img class="grid-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSu4x9gTkw0KzlGfaA75qjzQYgGRzcnC0dz37ePg4O6nKLaB9z2NgRXgRPJnE1YrluLFoZEFIDrPJRMWvPcvcJ26-3MalEjShy257cj4GOzv0x9TQSiP_biUDyt0Bk9l7zVnVL4JRd_iKoqyw3UBRBBNLpuENseS7U2DmX1S8ocv1FhWvi5s6ijNJJlJGoPZQS8g7RNkJpmlQ1KFWDQyyfGRMR13geFYY3gD-A146pmVZQ2QWEeSAVZNSmXlIUeoGQq73cUQg0TPw" alt="Server rack">
+                <div class="grid-overlay"></div>
+                <span class="grid-label">CLOUD_NODES</span>
+            </div>
+            <div class="grid-card">
+                <img class="grid-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2uTDHl-BYoNjK3ECxA0P4ovUmFmtgDBqrLB0JIUod44QOJ9mOWToGKPxcLQNp2OlgVVkn2D9DAtwuUfMN0H7d2Rtv8kAzdAER5R4IvzfjmkLC8CQlGr27ZmmoSJh9_C2IuUEDwuMSLJBuhAU7OxyMUogpJ9-YmiduLQp2mUcYbbFFb5NGhenv13ljDW93v1qYfvjnEM7Yy-l6v87fe_RqPvGtyT140YZ_y8I7rvEr16_4TWybvBL_jIzIv2X6CCXPDj6XcWV02XY" alt="Data patterns">
+                <div class="grid-overlay"></div>
+                <span class="grid-label">ALGORITHMS</span>
+            </div>
+            <div class="grid-card">
+                <img class="grid-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIIt5dM18dCpezPDpn0ARB-JILkxwMBWeG_7z6VRCBxfWD1UwMHByjhVPUzJ3xGMN91iTusN1eJRHIsyOxEpPpA8JAOUAUB6YBufzLdupAWtOyjV3di330n8NjS6tN1ZGIWgNbUjBltXNLmHVm8pRu704PkaCjkWUEP0YTUJXPtv54BSa0dquis1B24NHe0cYxWcza0OlGmFnYgzsDc1rgK5yQC1RdG3COtOqC3_uvm-XT5h1fAJvWhgrlH_YPfft8Ndc2Qxdjnxs" alt="Laptop terminal">
+                <div class="grid-overlay"></div>
+                <span class="grid-label">TERMINAL</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copyright">©2024 NEON_ARCHITECT // DATA_ENGINEER</p>
+            <div class="footer__links">
+                <a href="#" class="footer__link">GitHub</a>
+                <a href="#" class="footer__link">LinkedIn</a>
+                <a href="#" class="footer__link">Documentation</a>
+                <a href="#" class="footer__link">Source_Code</a>
+            </div>
+            <div class="footer__leds">
+                <span class="led led--active"></span>
+                <span class="led"></span>
+                <span class="led"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Academic Lab // NEON_ARCHITECT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles-academic.css">
+</head>
+<body>
+    <!-- Top App Bar -->
+    <header class="top-bar">
+        <div class="container top-bar__inner">
+            <div class="logo">
+                <span class="material-symbols-outlined logo__icon">terminal</span>
+                <span class="logo__text">NEON_ARCHITECT</span>
+            </div>
+            <nav class="nav-primary">
+                <a href="#" class="nav-primary__link">Index</a>
+                <a href="#" class="nav-primary__link">Architecture</a>
+                <a href="#" class="nav-primary__link nav-primary__link--active">Academic Research</a>
+                <a href="#" class="nav-primary__link">Stack</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu">
+                <span>MENU</span>
+                <span class="material-symbols-outlined menu-icon">segment</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__bg-glow"></div>
+            <div class="hero__content">
+                <span class="hero__badge">Archive_Section_010</span>
+                <h1 class="hero__title">ACADEMIC<br><span class="hero__title-gradient">LABORATORY</span></h1>
+                <p class="hero__description">Mapping the convergence of distributed systems and theoretical computation. This repository documents my formal education at IFPE, research initiatives, and technical milestones.</p>
+            </div>
+        </section>
+
+        <!-- Bento Grid: IFPE Study + Core Focus -->
+        <section class="study-grid">
+            <div class="study-card study-card--main">
+                <div class="study-card__inner">
+                    <div class="study-image">
+                        <img class="study-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs5tf3a866jFNnlaEXGw2AvTRbzsZU-hkuIE2uQbe7AjWQ5FQ-Xq3HnyplCc793JYakohgPN1NtZtPw9PN-wnWMpThf9pvpkHiaoVMOrOHccxSHLkQV6h4LNoP73LD5LjJevKjilqocUCLxuW_PKW9w1pS4Ws9nkfXVw4bQtE_e_KgbjP_uiYuljEJfaeDDETgFNdIQfAr_q3yp2RtF2SxO_Z7ArBauvEB_-mxBUvSG7nxNtbMraKkWjKPihdbjiDWQp2hhWnZdjo" alt="Academic campus">
+                    </div>
+                    <div class="study-text">
+                        <div class="study-badge">
+                            <span class="badge-dot"></span>
+                            <span class="badge-label">Institution Profile</span>
+                        </div>
+                        <h2 class="study-title">Studies at IFPE</h2>
+                        <p class="study-description">Currently pursuing a degree in Systems Analysis and Development. Focusing on high-performance back-end architectures, relational theory, and automated data pipelines.</p>
+                        <div class="study-stats">
+                            <div class="stat stat--primary">
+                                <p class="stat-label">Status</p>
+                                <p class="stat-value">7th Semester</p>
+                            </div>
+                            <div class="stat stat--secondary">
+                                <p class="stat-label">GPA</p>
+                                <p class="stat-value">9.4 / 10.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="study-card study-card--focus">
+                <span class="material-symbols-outlined focus-icon">architecture</span>
+                <h3 class="focus-title">Core Pipeline Focus</h3>
+                <ul class="focus-list">
+                    <li>Distributed Systems</li>
+                    <li>Data Governance</li>
+                    <li>Stream Processing</li>
+                </ul>
+                <div class="focus-footer">
+                    <p class="focus-ref">Archival Ref: Academic_24</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Projects -->
+        <section class="projects">
+            <div class="projects-header">
+                <div>
+                    <span class="projects-caption">Project Repository</span>
+                    <h2 class="projects-title">Academic Projects</h2>
+                </div>
+                <div class="projects-line"></div>
+            </div>
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-media">
+                        <img class="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvNJFgikcrgdPAF2Uob1vjhrFOfINjZOy4mQ3QjIg-s0Boqdq32X769CB-q0d5_lD2a6B72oBBhHwOipeJ4ZGU2kHyYNDB-F3llomXMfYWWxuYOAQnsL-bNC8NKt6RroH66i415wVU_BbUT12Vw3aiDUUYEu2HZg71Q1k9TwFEzNYUm6fQngWBCx8T92cRRtJqch0tMexW40xgPhjp9b3In4QH_bnsOTLFl2ns9vnqRLkqy2ZWxMiFHP8vy6AaJRjE_3iDCUZHb7M" alt="Server farm">
+                        <div class="project-overlay"></div>
+                        <span class="project-tag">High Performance</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-subtitle">01 // Distributed Cache Engine</span>
+                        <h3 class="project-name">Scalable Session Management System</h3>
+                        <p class="project-desc">A research-led implementation of a distributed caching layer using Redis clusters and custom sharding logic. Built for the Advanced Web Systems course at IFPE.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Go</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (reversed layout) -->
+                <div class="project-item project-item--reverse">
+                    <div class="project-media">
+                        <img class="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6WHCDg8d_w97DFXt-epZfig36Z58_bOA0uGa4KHSPvZStMc9R26wCMvH8rbrKH3WiYvbwhfmE0ylPvlmQNx1Hdjh6-ud6t5sTYyPaji5w2ZDAIZSjIk6oaY9O7n6WqonEmufdKaml1abhlhhhL11dQKotmHfWsd0euEoyHoGN_duj6sVUAASQYTjIqI_pcwHfGCQvG3NF6CaTfdamA3SMxK6GK6q6fFqijxGPL3f0ixr2l2IWjTfSonnU4WbtUQFJPNQ0NIJ_uds" alt="Abstract data flow">
+                        <div class="project-overlay"></div>
+                        <span class="project-tag project-tag--tertiary">Big Data</span>
+                    </div>
+                    <div class="project-content project-content--right">
+                        <span class="project-subtitle">02 // ETL Pipeline Architecture</span>
+                        <h3 class="project-name">Financial Metadata Processor</h3>
+                        <p class="project-desc">Architecture and development of a robust ETL pipeline for processing heterogeneous financial datasets, focusing on schema evolution and data validation protocols.</p>
+                        <div class="project-tech project-tech--right">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Apache Spark</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research & Extension -->
+        <section class="research-extension">
+            <div class="research-card">
+                <div class="card-header">
+                    <span class="material-symbols-outlined card-icon card-icon--primary">biotech</span>
+                    <h2 class="card-title">Research Initiatives</h2>
+                </div>
+                <div class="research-items">
+                    <div class="research-item">
+                        <h4>Semantic Web Data Mining</h4>
+                        <p class="research-meta">PIBIC Undergraduate Research Grant</p>
+                        <p class="research-desc">Exploring RDF mapping for legacy relational databases to enhance interoperability in semantic networks.</p>
+                    </div>
+                    <div class="research-item">
+                        <h4>Concurrency in Hybrid Clouds</h4>
+                        <p class="research-meta">Academic Paper Proposal</p>
+                        <p class="research-desc">Analyzing vertical auto-scaling behavior under multi-tenant resource contention in Kubernetes environments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extension-card">
+                <div class="card-header">
+                    <span class="material-symbols-outlined card-icon card-icon--tertiary">groups</span>
+                    <h2 class="card-title">Extension Programs</h2>
+                </div>
+                <div class="research-items">
+                    <div class="research-item">
+                        <h4>Code For Community</h4>
+                        <p class="research-meta">Lead Technical Mentor</p>
+                        <p class="research-desc">Developing web solutions for local NGOs while mentoring first-year students in software development fundamentals.</p>
+                    </div>
+                    <div class="research-item">
+                        <h4>IFPE Tech Week</h4>
+                        <p class="research-meta">Organizer & Speaker</p>
+                        <p class="research-desc">Workshop lead: "Modern Data Engineering Pipelines: From Batch to Real-time."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Achievements -->
+        <section class="achievements">
+            <div class="achievements-header">
+                <h2 class="achievements-title">Technical Achievements</h2>
+                <p class="achievements-subtitle">Recognition for excellence in competitive programming and academic merit.</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <span class="material-symbols-outlined achievement-icon">military_tech</span>
+                    <span class="achievement-label">1st Place</span>
+                    <p class="achievement-desc">IFPE Hackathon 2023</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="material-symbols-outlined achievement-icon">workspace_premium</span>
+                    <span class="achievement-label">Academic Honor</span>
+                    <p class="achievement-desc">Dean's List 2022-2023</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="material-symbols-outlined achievement-icon">trophy</span>
+                    <span class="achievement-label">Finalist</span>
+                    <p class="achievement-desc">Inter-Institute Algorithmic Cup</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="material-symbols-outlined achievement-icon">verified</span>
+                    <span class="achievement-label">AWS Certified</span>
+                    <p class="achievement-desc">Cloud Practitioner</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copyright">©2024 NEON_ARCHITECT // DATA_ENGINEER</p>
+            <div class="footer__links">
+                <a href="#" class="footer__link">GitHub</a>
+                <a href="#" class="footer__link">LinkedIn</a>
+                <a href="#" class="footer__link">Documentation</a>
+                <a href="#" class="footer__link footer__link--active">Source_Code</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

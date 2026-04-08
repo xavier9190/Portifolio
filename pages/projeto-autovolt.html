@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AutoVolt // NEON_ARCHITECT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles-autovolt.css">
+</head>
+<body>
+    <div class="site-wrapper" id="top">
+        <!-- Header / Top App Bar -->
+        <header class="top-bar">
+            <div class="container top-bar__inner">
+                <div class="logo">
+                    <span class="material-symbols-outlined logo__icon">terminal</span>
+                    <span class="logo__text">NEON_ARCHITECT</span>
+                </div>
+                <nav class="nav-primary">
+                    <a href="#top" class="nav-primary__link nav-primary__link">Index</a>
+                    <a href="#top" class="nav-primary__link nav-primary__link">Core Pipeline</a>
+                    <a href="#system-components" class="nav-primary__link">Stack</a>
+                    <a href="#architecture" class="nav-primary__link">Architecture</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__glow-bg"></div>
+                    <div class="hero__content">
+                        <div class="hero__badge">
+                            <span class="hero__badge-text">Project 01 // Industrial Analytics</span>
+                        </div>
+                        <h1 class="hero__title">
+                            AUTO<span class="hero__title-accent">VOLT</span><br>
+                            <span class="hero__subtitle">FOR BATERIAS MOURA</span>
+                        </h1>
+                        <p class="hero__description">
+                            A high-scale data architecture designed to transform raw industrial telemetry into real-time decision intelligence for Latin America's largest battery manufacturer.
+                        </p>
+                        <div class="hero__actions">
+                            <button class="btn btn--primary">Explore Pipeline</button>
+                            <button class="btn btn--secondary">Documentation</button>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__ring">
+                            <div class="hero__ring-inner">
+                                <div class="hero__ring-core">
+                                    <span class="material-symbols-outlined hero__manufacture-icon">precision_manufacturing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology Stack: Bento Grid -->
+            <section class="stack">
+                <div class="container">
+                    <h2 class="section-caption" id="system-components">System_Components</h2>
+                    <div class="bento-grid">
+                        <div class="bento-card bento-card--featured">
+                            <span class="material-symbols-outlined bento-card__icon bento-card__icon--primary">analytics</span>
+                            <h3 class="bento-card__title">Google BigQuery</h3>
+                            <p class="bento-card__text">Serverless, highly scalable data warehouse utilized for complex OLAP queries across petabytes of industrial telemetry.</p>
+                        </div>
+                        <div class="bento-card">
+                            <span class="material-symbols-outlined bento-card__icon bento-card__icon--secondary">database</span>
+                            <h3 class="bento-card__title">Medallion</h3>
+                            <p class="bento-card__text">Standardized data architecture structure for multi-stage refining.</p>
+                        </div>
+                        <div class="bento-card">
+                            <span class="material-symbols-outlined bento-card__icon bento-card__icon--tertiary">cloud_sync</span>
+                            <h3 class="bento-card__title">Airflow</h3>
+                            <p class="bento-card__text">Workflow orchestration for complex ETL dependencies.</p>
+                        </div>
+                        <div class="bento-card bento-card--tech">
+                            <h3 class="bento-card__tech-label">Tech Stack</h3>
+                            <div class="tech-pills">
+                                <span class="tech-pill">PYTHON</span>
+                                <span class="tech-pill">SQL</span>
+                                <span class="tech-pill">TERRAFORM</span>
+                                <span class="tech-pill">GCP_PUBSUB</span>
+                            </div>
+                        </div>
+                        <div class="bento-card bento-card--challenge">
+                            <div class="challenge-content">
+                                <h3 class="challenge-title">The Challenge</h3>
+                                <p class="challenge-text">
+                                    Baterias Moura produces thousands of units daily. The legacy system suffered from siloed data and 24-hour latency, making real-time defect detection impossible. We needed a pipeline that could ingest, clean, and serve insights in under 30 seconds.
+                                </p>
+                            </div>
+                            <div class="challenge-media">
+                                <img class="challenge-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPuPajAWhtgFnPhTZZPEsRtXN4parrkQCxDD8A83_OYiJp0x1vjY-O56rMXXAOF9SsuK3z51Bb_vWIyypCyjgcUcr6YzSf8qv5XRSwO1z0w0rtKiRQDRUAGqgXuhYFSKfVj5wEHh-7ENrCPCfX5MMieURP8i_XkpSSmXAYoSnPiS6ORbwz9WPGRn9s4PTg2AjbnDu0G9t9OPUki8xFtkO1yiZUOuOS4fQ0zEotDotGSnsu3ILUSdcAHjqst61HT35wtPoB3jAPTW4" alt="Industrial robotic arm with neon lighting">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Architecture Visualization (Medallion layers) -->
+            <section class="architecture">
+                <div class="container">
+                    <div class="architecture__header">
+                        <h2 class="architecture__title" id="architecture">THE ARCHITECTURE</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="layers-grid">
+                        <div class="layer-card layer-card--bronze">
+                            <div class="layer-card__number">01</div>
+                            <div class="layer-card__icon-badge">
+                                <span class="material-symbols-outlined layer-card__icon">raw_on</span>
+                            </div>
+                            <h4 class="layer-card__title">Bronze Layer</h4>
+                            <p class="layer-card__desc">Raw ingestion from IoT sensors and SAP APIs. Immutable storage of historical data in Avro format to preserve schema evolution.</p>
+                            <div class="layer-progress">
+                                <div class="layer-progress__bar layer-progress__bar--full"></div>
+                                <div class="layer-progress__bar layer-progress__bar--partial"></div>
+                            </div>
+                        </div>
+                        <div class="layer-card layer-card--silver">
+                            <div class="layer-card__number">02</div>
+                            <div class="layer-card__icon-badge">
+                                <span class="material-symbols-outlined layer-card__icon">cleaning_services</span>
+                            </div>
+                            <h4 class="layer-card__title">Silver Layer</h4>
+                            <p class="layer-card__desc">Cleaning, filtering, and de-duplication. Data is transformed into structured Delta formats, enabling time-travel and ACID compliance.</p>
+                            <div class="layer-progress">
+                                <div class="layer-progress__bar layer-progress__bar--full"></div>
+                                <div class="layer-progress__bar layer-progress__bar--full"></div>
+                            </div>
+                        </div>
+                        <div class="layer-card layer-card--gold">
+                            <div class="layer-card__number">03</div>
+                            <div class="layer-card__icon-badge layer-card__icon-badge--glow">
+                                <span class="material-symbols-outlined layer-card__icon">insights</span>
+                            </div>
+                            <h4 class="layer-card__title">Gold Layer</h4>
+                            <p class="layer-card__desc">Business-level aggregates. Optimized for Looker and PowerBI consumption. Real-time dashboards for floor managers and executives.</p>
+                            <div class="layer-progress">
+                                <div class="layer-progress__bar layer-progress__bar--full"></div>
+                                <div class="layer-progress__bar layer-progress__bar--half"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Code / Pipeline Block -->
+            <section class="pipeline">
+                <div class="container pipeline__grid">
+                    <div class="pipeline__info">
+                        <h2 class="pipeline__title">TRANSFORMATION_LOGIC</h2>
+                        <p class="pipeline__desc">
+                            The core transformation uses BigQuery SQL and dbt (Data Build Tool) to orchestrate the transition from Bronze to Silver. We implemented custom logic to handle late-arriving telemetry data from the production line.
+                        </p>
+                        <ul class="pipeline__list">
+                            <li class="pipeline__list-item">
+                                <span class="material-symbols-outlined pipeline__check">check_circle</span>
+                                <span>Incremental loading reduces compute cost by 45%</span>
+                            </li>
+                            <li class="pipeline__list-item">
+                                <span class="material-symbols-outlined pipeline__check">check_circle</span>
+                                <span>Automated data quality checks using Great Expectations</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="code-window">
+                        <div class="code-window__header">
+                            <div class="code-window__dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="code-window__title">AUTOVOLT_PIPELINE.SQL</span>
+                        </div>
+                        <div class="code-window__body">
+                            <pre><code><span class="keyword">WITH</span> raw_telemetry <span class="keyword">AS</span> (
+  <span class="keyword">SELECT</span>
+    sensor_id,
+    timestamp_trunc(event_time, <span class="string">SECOND</span>) <span class="keyword">as</span> sec_ts,
+    avg(voltage) <span class="keyword">OVER</span> (PARTITION <span class="keyword">BY</span> sensor_id) <span class="keyword">as</span> avg_v
+  <span class="keyword">FROM</span> `moura-production.bronze.iot_stream`
+)
+<span class="keyword">INSERT INTO</span> `moura-production.silver.production_metrics`
+<span class="keyword">SELECT</span> * <span class="keyword">FROM</span> raw_telemetry
+<span class="keyword">WHERE</span> avg_v &gt; <span class="string">12.6</span> <span class="comment">-- Filter Outliers</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results / Impact -->
+            <section class="results">
+                <div class="container">
+                    <div class="results__header">
+                        <div class="results__headline">
+                            <h2 class="results__title">THE_OUTCOME.</h2>
+                            <p class="results__subtitle">Measurable efficiency in industrial scale.</p>
+                        </div>
+                        <div class="results__kpis">
+                            <div class="kpi">
+                                <div class="kpi__value">300%</div>
+                                <div class="kpi__label">INGESTION_SPEED</div>
+                            </div>
+                            <div class="kpi">
+                                <div class="kpi__value">15%</div>
+                                <div class="kpi__label">WASTE_REDUCTION</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results__grid">
+                        <div class="result-card">
+                            <h5 class="result-card__title">Latency Reduction</h5>
+                            <p class="result-card__text">Reduced end-to-end data latency from 24 hours to sub-30 seconds for critical production alerts.</p>
+                        </div>
+                        <div class="result-card">
+                            <h5 class="result-card__title">Scalability</h5>
+                            <p class="result-card__text">The architecture now handles over 500 million sensor events monthly without manual intervention.</p>
+                        </div>
+                        <div class="result-card">
+                            <h5 class="result-card__title">Data Governance</h5>
+                            <p class="result-card__text">Implemented centralized metadata management, ensuring 100% compliance with corporate security standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="footer__copyright">
+                    ©2024 NEON_ARCHITECT // DATA_ENGINEER
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">GitHub</a>
+                    <a href="#" class="footer__link">LinkedIn</a>
+                    <a href="#" class="footer__link">Documentation</a>
+                    <a href="#" class="footer__link">Source_Code</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
