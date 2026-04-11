@@ -54,112 +54,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .section-label, .btn-primary, .btn-second
   transition: margin-right 0.3s;
 }
 
-/* ===== SIDEBAR (right) ===== */
-.sidebar {
-  width: 320px;
-  background: var(--surface-container-lowest);
-  border-left: 1px solid rgba(74, 68, 85, 0.2);
-  height: calc(100vh - 5rem);
-  position: sticky;
-  top: 5rem;
-  overflow-y: auto;
-  transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-}
 
-.sidebar-inner {
-  padding: 2rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.sidebar-header h2 {
-  color: var(--primary);
-  font-size: 0.9rem;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-}
-
-.close-sidebar {
-  color: var(--outline);
-  cursor: pointer;
-  display: none;
-}
-
-.sidebar-nav {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.sidebar-link {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.75rem 1rem;
-  color: var(--on-surface-variant);
-  text-decoration: none;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.2s;
-  border-radius: 0.25rem;
-}
-
-.sidebar-link:hover {
-  background: var(--surface-container-low);
-  padding-left: 1.5rem;
-}
-
-.sidebar-link.active {
-  background: var(--surface-container-high);
-  color: var(--primary);
-  border-left: 3px solid var(--secondary);
-}
-
-.sidebar-footer {
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(74, 68, 85, 0.1);
-}
-
-.session-box {
-  background: var(--surface-container-lowest);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgba(74, 68, 85, 0.1);
-}
-
-.session-box p {
-  font-size: 0.65rem;
-  color: var(--on-surface-variant);
-  margin-bottom: 0.5rem;
-}
-
-.session-status {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: monospace;
-  font-size: 0.7rem;
-  color: var(--primary);
-}
-
-.green-dot {
-  width: 8px;
-  height: 8px;
-  background: #10b981;
-  border-radius: 50%;
-  box-shadow: 0 0 6px #10b981;
-}
 
 /* ===== HERO SECTION ===== */
 .hero {
@@ -503,87 +398,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .section-label, .btn-primary, .btn-second
   background: var(--outline-variant);
 }
 
-/* Footer */
-.footer {
-  background: var(--surface-container-lowest);
-  border-top: 1px solid rgba(74, 68, 85, 0.1);
-  padding: 2rem 0;
-  margin-top: 2rem;
-}
-
-.footer-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.copyright {
-  color: var(--primary-container);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-}
-
-.footer-links {
-  display: flex;
-  gap: 2rem;
-}
-.footer-links a {
-  color: #6b6b6b;
-  text-decoration: none;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  transition: color 0.2s;
-}
-.footer-links a:hover {
-  color: var(--secondary);
-}
-
-/* Drawer Overlay */
-.drawer-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(3px);
-  z-index: 200;
-  display: none;
-}
-
-.drawer-overlay.active {
-  display: block;
-}
-
-/* Responsive */
 @media (max-width: 1024px) {
-  .sidebar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    z-index: 300;
-    transform: translateX(100%);
-    box-shadow: -5px 0 30px rgba(0,0,0,0.5);
-  }
-  .sidebar.open {
-    transform: translateX(0);
-  }
-  .close-sidebar {
-    display: block;
-  }
-  .desktop-nav {
-    display: none;
-  }
-  .mobile-menu-icon {
-    display: block;
-  }
-  .menu-button {
-    display: none;
-  }
   .hero {
     grid-template-columns: 1fr;
   }
@@ -611,9 +426,6 @@ h1, h2, h3, h4, .logo-text, .nav-link, .section-label, .btn-primary, .btn-second
   }
   .bento-card {
     grid-column: span 1 !important;
-  }
-  .container {
-    padding: 0.75rem 1rem;
   }
   .main-content {
     padding: 1rem;

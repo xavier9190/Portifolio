@@ -548,47 +548,4 @@
 
     .vision-card p { color: var(--on-surface-variant); line-height: 1.8; }
 
-    /* ═══════════════════════════════
-       FOOTER
-    ═══════════════════════════════ */
-    footer {
-      background: var(--surface-container-lowest);
-      border-top: 1px solid rgba(74, 68, 85, 0.10);
-      padding: 3rem 2rem;
-      margin-top: 4rem;
-    }
-
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    @media (min-width: 700px) {
-      .footer-inner { flex-direction: row; justify-content: space-between; }
-    }
-
-    .footer-copy {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.6rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--primary-container);
-    }
-
-    .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
-
-    .footer-links a {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.6rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: #4b5563;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .footer-links a:hover { color: var(--secondary); }
+    
