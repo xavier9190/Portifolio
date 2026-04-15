@@ -9,30 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   <!-- External CSS (pure, no Tailwind, no JS) -->
   <link rel="stylesheet" href="../styles/styles-analise-vendas.css">
+  <link rel="stylesheet" href="../styles/styles-navbar-top.css">
 </head>
 <body class="dark-body">
-  <!-- Fixed Header / TopAppBar (no sidebar, only main navigation) -->
-  <header class="site-header">
-    <div class="header-container">
+  <!-- ── Header ── -->
+  <header class="top-bar">
+    <div class="container">
       <div class="logo-area">
-        <span class="material-symbols-outlined logo-icon">terminal</span>
-        <span class="logo-text">DATA_TERMINAL_v1.0</span>
+        <span class="material-symbols-outlined neon-icon">terminal</span>
+        <span class="logo-text">Xavier</span>
       </div>
-      
-      <!-- Desktop navigation (hidden on mobile, no sidebar) -->
       <nav class="desktop-nav">
-        <a class="nav-link active">DASHBOARD_CORE</a>
-        <a class="nav-link">KPI_METRICS</a>
-        <a class="nav-link">INSIGHT_LOGS</a>
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="cases.html" class="nav-link active">Projetos</a>
+        <a href="stack.html" class="nav-link">Stack</a>
+        <a href="about.html" class="nav-link">Sobre</a>
+        <a href="academic.html" class="nav-link">Academia</a>
+        <a href="contact.html" class="nav-link">Contato</a>
       </nav>
-      
-      <!-- Right side: avatar + dummy button (non-functional, no JS) -->
-      <div class="header-actions">
-        <button class="dummy-btn" aria-label="action button (non-functional)">Quick Sync</button>
-        <div class="avatar-wrapper">
-          <img class="avatar-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfS0rviBkWBEBctIbjDQTa4yFMXG_lNgtpO5C94UhM9L0KsVk7rJi5n67HLxogYXpDn0j8cxUa1bN38eccfLr04qdkmQbLD_tgGXN47KVbkCoflq-l8J0XYC-OIyDS40BYRH6syE01l5HzOg2n_FDsUFa62o_9y4OWyJmwSWON_IGU-_2YynIZd8xyyiXZBriRdlSCvBOdd_a2rzMM1zmcKoRplD9n8NoB0AmdUm5wafDo1btUN3fCyYXk9sRr1rwRKPVV4Ar5EJY" alt="data architect profile">
-        </div>
-      </div>
     </div>
   </header>
 
@@ -121,12 +115,7 @@
     <section class="dashboard-section">
       <h2 class="dashboard-title">Interactive Dashboard</h2>
       <div class="dashboard-container glass-panel">
-        <div class="dashboard-overlay-gradient"></div>
-        <img class="dashboard-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtfmD9VDvt67-KnQ-Ukwbm3GDrUKWqeBIPdn5hCe-SaybBy5GTmj6xS35GutiA31BZsaQ1EOgouCtogGDgsofottAXSd0RkvUyAaE_xbU9r-Skoh4MI45ykxbE-z0G6k42M3qFa6TUYBepBDSFz0wpcj_gM7xDZl2Ckz9qIwqX-UzHJ4FOb89B-HfnBnhPUBINe8-lwkR9FRKIbyeEAdKRd-mZyt27gHIfWGREof9QkMy2pNJahAYQONT9PEbKQZ_WOqhNcxnnogY" alt="data visualization dashboard preview">
-        <div class="dashboard-overlay-message">
-          <span class="material-symbols-outlined dash-icon">dashboard_customize</span>
-          <p class="dash-text">Power BI Embedded Dashboard – Insert iframe code here</p>
-        </div>
+        <iframe title="dashboard Analise RH" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZGYzYmUwOGEtMDQyMC00YmQ3LTg3MDAtZWU3ZGNhYmNlNzI1IiwidCI6IjEzOGExMjJiLTM5OTgtNDA3My1hNTcxLWZlN2FhYzQ5OTU2MCJ9" frameborder="0" allowFullScreen="true"></iframe>
       </div>
     </section>
 

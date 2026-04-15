@@ -9,21 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles-autovolt.css">
+    <link rel="stylesheet" href="../styles/styles-navbar-top.css">
 </head>
 <body>
     <div class="site-wrapper" id="top">
-        <!-- Header / Top App Bar -->
+        <!-- ── Header ── -->
         <header class="top-bar">
-            <div class="container top-bar__inner">
-                <div class="logo">
-                    <span class="material-symbols-outlined logo__icon">terminal</span>
-                    <span class="logo__text">XAVIER</span>
+            <div class="container">
+                <div class="logo-area">
+                    <span class="material-symbols-outlined neon-icon">terminal</span>
+                    <span class="logo-text">Xavier</span>
                 </div>
-                <nav class="nav-primary">
-                    <a href="#top" class="nav-primary__link nav-primary__link">Index</a>
-                    <a href="#top" class="nav-primary__link nav-primary__link">Core Pipeline</a>
-                    <a href="#system-components" class="nav-primary__link">Stack</a>
-                    <a href="#architecture" class="nav-primary__link">Architecture</a>
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="cases.html" class="nav-link active">Projetos</a>
+                    <a href="stack.html" class="nav-link">Stack</a>
+                    <a href="about.html" class="nav-link">Sobre</a>
+                    <a href="academic.html" class="nav-link">Academia</a>
+                    <a href="contact.html" class="nav-link">Contato</a>
                 </nav>
             </div>
         </header>
@@ -105,7 +108,18 @@
                 </div>
             </section>
 
-            <!-- Architecture Visualization (Medallion layers) -->
+            <!-- Embedded Dashboard (Power BI) -->
+            <section class="dashboard-embed">
+                <div class="container">
+                    <h2 class="architecture__title">DASHBOARD</h2>
+                    <div class="section-divider"></div>
+                    <div class="autovolt-dashboard-container">
+                        <iframe title="DASH - OP - BCKP" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNTkwNDFjOTQtNDMxOC00NGZiLTlhMzgtZDI0NTgyNTY5MjdjIiwidCI6IjEzOGExMjJiLTM5OTgtNDA3My1hNTcxLWZlN2FhYzQ5OTU2MCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+            </section>
+
+
             <section class="architecture">
                 <div class="container">
                     <div class="architecture__header">
