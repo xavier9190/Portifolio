@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Análise de RH | Neon Dashboard</title>
-  <!-- Google Fonts & Material Icons (no JS) -->
+  <!-- Google Fonts & Material Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   <!-- External CSS (pure, no Tailwind, no JS) -->
@@ -76,37 +76,37 @@
         </div>
       </div>
 
-      <!-- KPI Cards Grid -->
+      <!-- KPI Cards Grid (now with HR metrics) -->
       <div class="kpi-grid">
         <div class="kpi-card border-primary">
-          <span class="kpi-label">Receita Anual</span>
-          <div class="kpi-value">R$24,8M</div>
-          <div class="kpi-trend up"><span class="material-symbols-outlined">trending_up</span> +12,4% vs AA</div>
+          <span class="kpi-label">Headcount Total</span>
+          <div class="kpi-value">1.284</div>
+          <div class="kpi-trend up"><span class="material-symbols-outlined">trending_up</span> +5,2% vs AA</div>
         </div>
         <div class="kpi-card border-secondary">
-          <span class="kpi-label">Margem Bruta</span>
-          <div class="kpi-value">38,2%</div>
-          <div class="kpi-sub">Meta: 35,0%</div>
+          <span class="kpi-label">Turnover (12m)</span>
+          <div class="kpi-value">12,4%</div>
+          <div class="kpi-sub">Meta: ≤10%</div>
         </div>
         <div class="kpi-card border-tertiary">
-          <span class="kpi-label">Notas Fiscais</span>
-          <div class="kpi-value">1.204</div>
-          <div class="kpi-sub">Emitidas no período</div>
+          <span class="kpi-label">Retenção</span>
+          <div class="kpi-value">87,6%</div>
+          <div class="kpi-sub">Índice de permanência</div>
         </div>
         <div class="kpi-card border-primary">
-          <span class="kpi-label">Crescimento YoY</span>
-          <div class="kpi-value">+15%</div>
-          <div class="kpi-sub">Tendência de receita</div>
+          <span class="kpi-label">Novas Contratações</span>
+          <div class="kpi-value">156</div>
+          <div class="kpi-sub">Último trimestre</div>
         </div>
         <div class="kpi-card border-secondary">
-          <span class="kpi-label">Produto Maior Margem</span>
-          <div class="kpi-value">Beverage_X</div>
-          <div class="kpi-sub">48% de Lucratividade</div>
+          <span class="kpi-label">Tempo Médio de Casa</span>
+          <div class="kpi-value">3,2 anos</div>
+          <div class="kpi-sub">+0,3 vs ano anterior</div>
         </div>
         <div class="kpi-card border-tertiary">
-          <span class="kpi-label">Melhor Vendedor(a)</span>
-          <div class="kpi-value">Sarah Jenkins</div>
-          <div class="kpi-sub">Melhor Desempenho</div>
+          <span class="kpi-label">Custo Médio / Func.</span>
+          <div class="kpi-value">R$8.450</div>
+          <div class="kpi-sub">Mensal por colaborador</div>
         </div>
       </div>
     </section>
@@ -124,36 +124,40 @@
       <div class="features-col">
         <h3 class="col-heading"><span class="material-symbols-outlined text-secondary">tune</span> Funcionalidades Analíticas</h3>
         <div class="feature-card">
-          <h4 class="feature-title">Filtragem Multidimensional</h4>
-          <p class="feature-desc">Slicers interativos de séries temporais, alternância por categorias de produto (Bebidas/Alimentos) e drill-downs regionais.</p>
+          <h4 class="feature-title">Segmentação por Perfil</h4>
+          <p class="feature-desc">Filtros interativos por departamento, cargo, faixa etária e tempo de casa para análises precisas.</p>
         </div>
         <div class="feature-card">
-          <h4 class="feature-title">Modo de Análise Dinâmica</h4>
-          <p class="feature-desc">Alterne entre visualizações de Receita e Margem em todos os gráficos com um único clique usando grupos de cálculo DAX.</p>
+          <h4 class="feature-title">Análise de Turnover</h4>
+          <p class="feature-desc">Visualização de desligamentos voluntários vs. involuntários, com drill‑down por motivo e área.</p>
+        </div>
+        <div class="feature-card">
+          <h4 class="feature-title">Previsão de Headcount</h4>
+          <p class="feature-desc">Projeção de crescimento da força de trabalho baseada em séries temporais e tendências de contratação.</p>
         </div>
       </div>
       <div class="value-col">
         <h3 class="col-heading"><span class="material-symbols-outlined text-tertiary">rocket_launch</span> Valor de Negócio</h3>
         <div class="value-grid-cards">
           <div class="value-card">
-            <span class="material-symbols-outlined value-icon-primary">person_search</span>
-            <h4 class="value-title">Melhores Desempenhos</h4>
-            <p class="value-desc">Identifique instantaneamente os representantes de vendas de maior impacto.</p>
+            <span class="material-symbols-outlined value-icon-primary">diversity_3</span>
+            <h4 class="value-title">Planejamento de Força de Trabalho</h4>
+            <p class="value-desc">Antecipe necessidades de contratação e alocação de talentos com dados atualizados.</p>
           </div>
           <div class="value-card">
-            <span class="material-symbols-outlined value-icon-secondary">show_chart</span>
-            <h4 class="value-title">Tendências de Crescimento</h4>
-            <p class="value-desc">Monitoramento em tempo real da evolução de receita e margem.</p>
+            <span class="material-symbols-outlined value-icon-secondary">trending_down</span>
+            <h4 class="value-title">Redução de Turnover</h4>
+            <p class="value-desc">Identifique áreas críticas e tome ações proativas para aumentar a retenção.</p>
           </div>
           <div class="value-card">
-            <span class="material-symbols-outlined value-icon-tertiary">compare_arrows</span>
-            <h4 class="value-title">Benchmarking Comparativo</h4>
-            <p class="value-desc">Compare a performance entre linhas de produto e regiões.</p>
+            <span class="material-symbols-outlined value-icon-tertiary">bar_chart</span>
+            <h4 class="value-title">Benchmarking Interno</h4>
+            <p class="value-desc">Compare indicadores entre departamentos e identifique melhores práticas.</p>
           </div>
           <div class="value-card">
-            <span class="material-symbols-outlined value-icon-primary">diamond</span>
-            <h4 class="value-title">Foco em Lucratividade</h4>
-            <p class="value-desc">Identifique produtos de alta margem para otimizar o foco de vendas.</p>
+            <span class="material-symbols-outlined value-icon-primary">monitoring</span>
+            <h4 class="value-title">Custo por Colaborador</h4>
+            <p class="value-desc">Monitore o custo médio e otimize investimentos em capital humano.</p>
           </div>
         </div>
       </div>
@@ -173,16 +177,16 @@
         </div>
         <div class="tech-grid">
           <div>
-            <h4 class="tech-subtitle">Modelagem Robusta</h4>
-            <p class="tech-text">Engenharia de um Star Schema limpo para garantir alta performance com cálculos DAX complexos em milhões de linhas de transações.</p>
+            <h4 class="tech-subtitle">Modelagem de RH</h4>
+            <p class="tech-text">Star Schema otimizado para dados de funcionários, movimentações e histórico de cargos, garantindo performance com grandes volumes de registros.</p>
           </div>
           <div>
-            <h4 class="tech-subtitle">KPIs de Precisão</h4>
-            <p class="tech-text">Uso de DAX avançado para calcular métricas de inteligência temporal como Year-to-Date (YTD) e crescimento Month-over-Month (MoM) de forma fluida.</p>
+            <h4 class="tech-subtitle">KPIs de Inteligência Temporal</h4>
+            <p class="tech-text">Cálculos DAX para métricas YTD, MoM e YoY de headcount, turnover e retenção, com tratamento de datas não úteis.</p>
           </div>
           <div>
-            <h4 class="tech-subtitle">Estratégia de UX</h4>
-            <p class="tech-text">Foco nos princípios de proporção 'Data-to-Ink', garantindo que cada elemento visual tenha um propósito claro para os tomadores de decisão.</p>
+            <h4 class="tech-subtitle">Experiência do Usuário</h4>
+            <p class="tech-text">Design focado na clareza dos indicadores de RH, com tooltips informativos e navegação intuitiva entre páginas do relatório.</p>
           </div>
         </div>
       </div>
@@ -198,9 +202,10 @@
       </div>
       <div class="footer-copyright">© 2024 XAVIER // CONEXÃO_CRIPTOGRAFADA</div>
       <div class="footer-links">
-        <a class="footer-link">Status_Sistema</a>
-        <a class="footer-link">Docs_API</a>
-        <a class="footer-link">Código_Fonte</a>
+        <a href="https://github.com/xavier9190" class="footer-link" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/pedrohenriquereisxavier/" class="footer-link" target="_blank">LinkedIn</a>
+        <a href="#" class="footer-link">Documentação</a>
+        <a href="https://github.com/xavier9190/Portifolio" class="footer-link" target="_blank">Código_Fonte</a>
       </div>
     </div>
   </footer>

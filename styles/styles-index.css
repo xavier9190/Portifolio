@@ -127,6 +127,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .section-label, .btn-primary, .btn-second
   cursor: pointer;
   transition: transform 0.1s;
   box-shadow: 0 0 12px rgba(90, 15, 200, 0.3);
+  text-decoration: none;
 }
 
 .btn-primary:active {
@@ -141,6 +142,9 @@ h1, h2, h3, h4, .logo-text, .nav-link, .section-label, .btn-primary, .btn-second
   color: var(--on-surface);
   cursor: pointer;
   transition: all 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .btn-secondary:hover {
