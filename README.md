@@ -1,33 +1,59 @@
-# 🚀 Portfólio Pessoal - Pedro Henrique Reis Xavier
+# 🚀 Portfólio de Dados & Engenharia — Xavier
 
-Bem-vindo ao repositório do meu site pessoal e portfólio! Este projeto hospeda minha página oficial no GitHub Pages, onde compartilho minha jornada acadêmica, projetos de análise de dados e minha paixão pela tecnologia com o DNA de Pernambuco. 🌵☀️
+Bem-vindo ao meu espaço de experimentação e exposição de projetos! Sou o **Xavier**, estudante de **Engenharia de Software (IFPE)** e entusiasta apaixonado por transformar dados brutos em inteligência estratégica.
 
-## 🧑‍💻 Sobre Mim
+Aqui você encontrará a documentação técnica do meu portfólio, focado em soluções robustas com o "DNA de Pernambuco" 🌵☀️.
 
-Olá! Sou o **Xavier**, estudante de Engenharia de Software no **IFPE**. 
-Atuo com foco em **Data Analysis**, transformando dados brutos em insights estratégicos. Tenho forte envolvimento com o ecossistema de inovação regional, participando ativamente de iniciativas como o movimento de Empresas Juniores (FEJEPE) e projetos técnicos como o AutoVolt.
+## 🧑‍💻 Perfil Profissional
 
-- 🎓 Graduando em Engenharia de Software (IFPE)
-- 📊 Especialista em Power BI & Medallion Architecture (GCP/BigQuery)
-- 🏗️ Desenvolvedor de Soluções BI com foco em Modelagem Star Schema
-- 🎨 Hobby: Esculturas em madeira (marcenaria artesanal)
+Atualmente, dedico meus estudos ao ecossistema de dados, com foco em:
+- **Arquitetura Medallion**: Implementação de camadas (Bronze, Silver, Gold) em ambientes GCP (BigQuery).
+- **Modelagem de Dados**: Especialista em Star Schema e processos de ETL/ELT.
+- **Visualização**: Dashboards avançados em Power BI com DAX complexo para finanças e operações.
+- **Inovação Regional**: Membro ativo do ecossistema de empresas juniores via FEJEPE.
 
-## 🌐 Acesse o Site
-O projeto pode ser visualizado ao vivo em: [xavier9190.github.io](https://xavier9190.github.io/)
+---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tech Stack & Ferramentas
 
-Este site foi construído utilizando tecnologias fundamentais de desenvolvimento web:
+| Categoria | Tecnologias |
+| :--- | :--- |
+| **Data Analytics** | Power BI (DAX), Excel Avançado, SQL |
+| **Data Engineering** | BigQuery, Google Cloud Platform (GCP), Medallion Architecture |
+| **Development** | Python, HTML5, CSS3, Engenharia de Software |
+| **Soft Skills** | Consultoria Digital, Transformação de Negócios (Junior Enterprise) |
 
-- **HTML5**: Estruturação de conteúdo.
-- **CSS3**: Estilização e design responsivo (layout moderno e limpo).
-- **GitHub Pages**: Hospedagem rápida e segura.
+---
+
+## 📂 Principais Projetos
+
+### 🔋 [Case AutoVolt](link-para-o-projeto)
+Desenvolvimento de uma solução de ponta a ponta para uma fábrica de baterias.
+- **Destaque:** Implementação de pipeline de dados usando arquitetura Medallion e criação de dashboard operacional para monitoramento de produção.
+- **Skills:** SQL, GCP, Star Schema.
+
+### 📈 [Dashboard Financeiro de Marcenaria](link-para-o-projeto)
+Projeto pessoal que une minha paixão por marcenaria artesanal com análise de custos.
+- **Destaque:** Controle de insumos e tempo de produção para esculturas de vida marinha.
+
+---
+
+## 🎨 Para além do código...
+Quando não estou refinando queries SQL, estou na oficina esculpindo arraias manta e outras formas marinhas em madeira. Acredito que a precisão da marcenaria reflete a minha busca por limpeza e estrutura no desenvolvimento de software.
+
+---
+
+## 🌐 Conecte-se comigo
+- **LinkedIn:** [Pedro Xavier](https://www.linkedin.com/in/pedrohenriquereisxavier/)
+- **Site:** [xavier9190.github.io](https://xavier9190.github.io/)
+
+---
 
 ## 📂 Estrutura do Projeto
 
 ```text
-├── assets/      # Imagens, ícones e recursos visuais
-├── pages/       # Páginas adicionais do site
-├── styles/      # Arquivos de estilização (CSS)
-├── index.html   # Página principal
-└── README.md    # Documentação do projeto
+├── assets/             # Imagens, ícones e recursos visuais (Ex: fotos das esculturas)
+├── pages/              # Páginas secundárias do portfólio
+├── styles/             # Arquivos CSS (Estilização moderna e responsiva)
+├── index.html          # Ponto de entrada principal do site
+└── README.md           # Documentação técnica do repositório
