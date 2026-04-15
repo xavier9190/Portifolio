@@ -213,6 +213,9 @@ h1, h2, h3, h4, h5, .logo-text, .nav-link, .tag, .case-btn, .approach-subtitle {
 }
 
 .case-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
   width: 100%;
   padding: 0.75rem;
   background: linear-gradient(135deg, var(--primary), var(--primary-container));
