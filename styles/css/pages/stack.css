@@ -1,44 +1,8 @@
-/* styles.css - NEON_ARCHITECT Design System */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ===== STACK PAGE — NEON_ARCHITECT ===== */
 
-:root {
-  /* Color system (based on original Tailwind config) */
-  --background: #131313;
-  --on-surface: #e5e2e1;
-  --surface-variant: #353534;
-  --surface-container: #201f1f;
-  --surface-container-high: #2a2a2a;
-  --surface-container-lowest: #0e0e0e;
-  --surface-container-low: #1c1b1b;
-  --primary: #d1bcff;
-  --primary-container: #5a0fc8;
-  --primary-fixed-dim: #d1bcff;
-  --secondary: #dcb8ff;
-  --secondary-container: #7701d0;
-  --tertiary: #e5b5ff;
-  --tertiary-container: #7300ad;
-  --outline-variant: #4a4455;
-  --outline: #958da0;
-  --on-surface-variant: #ccc3d7;
-  --error: #ffb4ab;
-}
-
-body {
-  background-color: var(--background);
-  color: var(--on-surface);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.5;
-  min-height: 100dvh;
-  overflow-x: hidden;
-}
-
-/* Typography */
-h1, h2, h3, h4, .logo-text, .nav-link, .badge, .card-title, .phil-title {
-  font-family: 'Space Grotesk', monospace;
+/* Page-specific headline font selectors */
+.badge, .card-title, .phil-title {
+  font-family: var(--font-headline);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -267,9 +231,6 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .card-title, .phil-title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.icon-primary { color: var(--primary); }
-.icon-secondary { color: var(--secondary); }
-.icon-tertiary { color: var(--tertiary); }
 
 .card-badge {
   font-size: 0.6rem;

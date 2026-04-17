@@ -1,43 +1,18 @@
-/* ========== RESET E VARIÁVEIS ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ===== CASES PAGE ===== */
 
-:root {
-  --bg-surface-lowest: #0e0e0e;
-  --bg-surface: #131313;
-  --surface-container-low: #1c1b1b;
-  --surface-container: #201f1f;
-  --surface-container-high: #2a2a2a;
-  --surface-container-highest: #353534;
-  --on-surface: #e5e2e1;
-  --on-surface-variant: #ccc3d7;
-  --primary: #d1bcff;
-  --primary-container: #5a0fc8;
-  --secondary: #dcb8ff;
-  --tertiary: #e5b5ff;
-  --outline-variant: #4a4455;
-  --on-primary: #3d0090;
-}
-
+/* Body override: darker background + flex column layout */
 body {
-  background-color: var(--bg-surface-lowest);
-  color: var(--on-surface);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.5;
-  min-height: 100vh;
+  background-color: var(--surface-container-lowest);
   display: flex;
   flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, .logo-text, .nav-link, .tag, .case-btn, .approach-subtitle {
-  font-family: 'Space Grotesk', sans-serif;
+/* Page-specific headline font selectors */
+.tag, .case-btn, .approach-subtitle {
+  font-family: var(--font-headline);
 }
 
-
-/* ========== MAIN CONTENT (SEM MARGEM LATERAL) ========== */
+/* ========== MAIN CONTENT ========== */
 .main-content {
   max-width: 1280px;
   margin: 0 auto;
@@ -115,7 +90,7 @@ h1, h2, h3, h4, h5, .logo-text, .nav-link, .tag, .case-btn, .approach-subtitle {
   border-left: 2px solid var(--secondary);
 }
 
-/* Glass card (reutilizável) */
+/* Glass card */
 .glass-card {
   background: rgba(42, 42, 42, 0.4);
   backdrop-filter: blur(12px);
@@ -212,27 +187,17 @@ h1, h2, h3, h4, h5, .logo-text, .nav-link, .tag, .case-btn, .approach-subtitle {
   letter-spacing: 0.02em;
 }
 
+/* Page-specific button overrides */
 .case-btn {
   display: block;
   text-align: center;
-  text-decoration: none;
   width: 100%;
   padding: 0.75rem;
-  background: linear-gradient(135deg, var(--primary), var(--primary-container));
-  border: none;
-  border-radius: 0.5rem;
-  color: var(--on-primary);
-  font-weight: bold;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.2s;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.case-btn:active {
-  transform: scale(0.98);
+  transition: transform 0.1s ease, box-shadow 0.2s;
 }
 
 /* Seção Approach */
@@ -295,5 +260,3 @@ h1, h2, h3, h4, h5, .logo-text, .nav-link, .tag, .case-btn, .approach-subtitle {
   color: var(--on-surface-variant);
   line-height: 1.6;
 }
-
-

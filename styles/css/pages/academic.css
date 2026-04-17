@@ -1,50 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --background: #131313;
-    --on-surface: #e5e2e1;
-    --surface-container-low: #1c1b1b;
-    --surface-container: #201f1f;
-    --surface-container-high: #2a2a2a;
-    --surface-container-highest: #353534;
-    --surface-container-lowest: #0e0e0e;
-    --primary: #d1bcff;
-    --primary-container: #5a0fc8;
-    --on-primary-container: #c5abff;
-    --secondary: #dcb8ff;
-    --tertiary: #e5b5ff;
-    --outline-variant: #4a4455;
-    --on-surface-variant: #ccc3d7;
-    --font-headline: 'Space Grotesk', monospace;
-    --font-body: 'Inter', sans-serif;
-}
-
-body {
-    background-color: var(--background);
-    color: var(--on-surface);
-    font-family: var(--font-body);
-    line-height: 1.5;
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-}
-
+/* ===== ACADEMIC PAGE ===== */
 
 /* ===== MAIN CONTENT ===== */
 .main-content {
@@ -105,13 +59,6 @@ body {
     .hero__title {
         font-size: 4.5rem;
     }
-}
-
-.hero__title-gradient {
-    background: linear-gradient(135deg, var(--primary), var(--primary-container));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .hero__description {
@@ -665,4 +612,3 @@ body {
     letter-spacing: 0.05em;
     color: var(--on-surface-variant);
 }
-

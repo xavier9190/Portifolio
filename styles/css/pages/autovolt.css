@@ -1,75 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    /* Color system from original Tailwind config */
-    --background: #131313;
-    --on-surface: #e5e2e1;
-    --surface-variant: #353534;
-    --surface-container-low: #1c1b1b;
-    --surface-container: #201f1f;
-    --surface-container-high: #2a2a2a;
-    --surface-container-highest: #353534;
-    --surface-container-lowest: #0e0e0e;
-    --surface-dim: #131313;
-    --primary: #d1bcff;
-    --primary-container: #5a0fc8;
-    --on-primary: #3d0090;
-    --on-primary-container: #c5abff;
-    --secondary: #dcb8ff;
-    --secondary-container: #7701d0;
-    --on-secondary: #480081;
-    --tertiary: #e5b5ff;
-    --tertiary-container: #7300ad;
-    --outline-variant: #4a4455;
-    --on-surface-variant: #ccc3d7;
-    --error: #ffb4ab;
-    --primary-fixed-dim: #d1bcff;
-    --secondary-fixed-dim: #dcb8ff;
-    --tertiary-fixed-dim: #e5b5ff;
-    
-    /* Spacing / typography */
-    --font-headline: 'Space Grotesk', monospace;
-    --font-body: 'Inter', sans-serif;
-    --transition-default: all 0.2s ease;
-}
-
-body {
-    background-color: var(--background);
-    color: var(--on-surface);
-    font-family: var(--font-body);
-    line-height: 1.5;
-    min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-}
+/* ===== AUTOVOLT PAGE ===== */
 
 .site-wrapper {
     overflow-x: clip;
 }
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-}
-
 /* ===== TYPOGRAPHY & UTILS ===== */
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    display: inline-block;
-}
-
 .section-caption {
     font-size: 0.75rem;
     letter-spacing: 0.4em;
@@ -199,6 +134,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Page-specific button base + modifiers */
 .btn {
     padding: 0.875rem 2rem;
     font-family: var(--font-headline);
@@ -744,7 +680,7 @@ body {
     }
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER (autovolt-specific structure) ===== */
 .footer {
     background: var(--surface-container-lowest);
     border-top: 1px solid rgba(74, 68, 85, 0.2);

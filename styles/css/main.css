@@ -1,0 +1,21 @@
+/* ═══════════════════════════════════════════
+   XAVIER PORTFOLIO — MASTER CSS
+   Import order matters for correct cascade.
+═══════════════════════════════════════════ */
+
+/* Base (loaded first) */
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/typography.css';
+@import 'base/global.css';
+
+/* Layout */
+@import 'layout/containers.css';
+
+/* Components */
+@import 'components/navbar.css';
+@import 'components/footer.css';
+@import 'components/buttons.css';
+
+/* Utilities (loaded last among shared files) */
+@import 'utilities/colors.css';

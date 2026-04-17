@@ -1,0 +1,12 @@
+/* ===== TYPOGRAPHY ===== */
+
+/* Headline font for all headings */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-headline);
+  letter-spacing: -0.02em;
+}
+
+/* Typography helper classes (used in about.html) */
+.font-headline { font-family: var(--font-headline); }
+.font-label    { font-family: var(--font-headline); }
+.text-glow     { text-shadow: 0 0 10px rgba(210, 188, 255, 0.4); }

@@ -1,0 +1,45 @@
+/* ===== SHARED BUTTON STYLES ===== */
+/* Normalized from index, cases, autovolt, and contact pages.
+   Page CSS may override specific properties (padding, display, box-shadow, etc). */
+
+/* ── Primary Gradient Button ── */
+.btn-primary,
+.case-btn,
+.btn--primary,
+.cta-button {
+  background: linear-gradient(135deg, var(--primary), var(--primary-container));
+  color: var(--on-primary);
+  border: none;
+  border-radius: 0.5rem;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(90, 15, 200, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:active,
+.case-btn:active,
+.btn--primary:hover,
+.cta-button:hover {
+  transform: scale(0.98);
+}
+
+/* ── Secondary / Outline Button ── */
+.btn-secondary,
+.btn--secondary {
+  background: transparent;
+  border: 1px solid rgba(74, 68, 85, 0.2);
+  border-radius: 0.5rem;
+  color: var(--on-surface);
+  font-family: var(--font-headline);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover,
+.btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}

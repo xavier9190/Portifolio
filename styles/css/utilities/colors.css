@@ -1,0 +1,15 @@
+/* ===== COLOR UTILITIES ===== */
+
+/* Icon color modifiers (shared by index + stack pages) */
+.icon-primary   { color: var(--primary); }
+.icon-secondary { color: var(--secondary); }
+.icon-tertiary  { color: var(--tertiary); }
+
+/* Gradient text effect (shared by index, academic, analise pages) */
+.gradient-text,
+.hero__title-gradient {
+  background-image: linear-gradient(135deg, var(--primary), var(--primary-container));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

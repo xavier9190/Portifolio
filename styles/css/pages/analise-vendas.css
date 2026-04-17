@@ -1,52 +1,15 @@
-/* ========== RESET & BASE ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ===== ANÁLISE DE VENDAS PAGE ===== */
 
+/* Body layout override for flex column */
 body.dark-body {
-  --bg-background: #131313;
-  --on-background: #e5e2e1;
-  --surface: #131313;
-  --surface-container-low: #1c1b1b;
-  --surface-container-highest: #353534;
-  --surface-container-lowest: #0e0e0e;
-  --surface-variant: #353534;
-  --on-surface-variant: #ccc3d7;
-  --primary: #d1bcff;
-  --primary-container: #5a0fc8;
-  --secondary: #dcb8ff;
-  --secondary-container: #7701d0;
-  --tertiary: #e5b5ff;
-  --outline-variant: #4a4455;
-  --on-secondary: #480081;
-  --on-tertiary: #4e0078;
-  --error: #ffb4ab;
-  
-  background-color: var(--bg-background);
-  color: var(--on-background);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.5;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-brand {
-  font-family: 'Space Grotesk', sans-serif;
+/* Page-specific headline font selectors */
+.badge, .kpi-label, .tech-tag, .footer-brand {
+  font-family: var(--font-headline);
 }
-
-/* ========== TYPOGRAPHY & UTILS ========== */
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  font-size: 1.25rem;
-  vertical-align: middle;
-}
-
-/* ========== HEADER is now handled by styles-navbar-top.css ========== */
-
-
 
 /* ========== MAIN CONTENT ========== */
 .main-content {
@@ -101,7 +64,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-br
   font-weight: bold;
   letter-spacing: -0.02em;
   line-height: 1.1;
-  color: var(--on-background);
+  color: var(--on-surface);
   margin-bottom: 1rem;
 }
 
@@ -117,17 +80,15 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-br
   }
 }
 
+/* Override gradient direction for this page */
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  background-image: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--on-surface-variant);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-headline);
   max-width: 42rem;
   margin-bottom: 1rem;
 }
@@ -274,8 +235,8 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-br
 .kpi-value {
   font-size: 1.75rem;
   font-weight: bold;
-  font-family: 'Space Grotesk', sans-serif;
-  color: var(--on-background);
+  font-family: var(--font-headline);
+  color: var(--on-surface);
   margin-top: 0.5rem;
 }
 
@@ -352,7 +313,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-br
 
 .dash-text {
   color: var(--primary);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-headline);
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -400,7 +361,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-br
 
 .feature-title {
   font-weight: bold;
-  color: var(--on-background);
+  color: var(--on-surface);
   margin-bottom: 0.5rem;
 }
 
@@ -539,7 +500,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-br
   line-height: 1.5;
 }
 
-/* Footer */
+/* Footer (unique structure for analise pages) */
 .site-footer {
   background-color: #0e0e0e;
   border-top: 1px solid rgba(74, 68, 85, 0.1);
@@ -589,7 +550,7 @@ h1, h2, h3, h4, .logo-text, .nav-link, .badge, .kpi-label, .tech-tag, .footer-br
   font-size: 0.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
 }
 
 .footer-links {
